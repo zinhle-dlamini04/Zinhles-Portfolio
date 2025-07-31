@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zinhle Dlamini Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Zinhle Dlamini</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="hero">
+    <div class="info-box">
+      <img src="{{ url_for('static', filename='zinhle.jpg') }}" alt="Zinhle Dlamini" class="profile-pic">
+      <h1>Hello, I'm Zinhle</h1>
+      <p>Business Analyst | Programmer | Aspiring Project Manager|Student at Durban University of Technology</p>
+     
+    </div>
+  </section>
+
+  <section id="about" class="hero">
+  <div class="info-box">
+    <h1>About Me</h1>
+    <p>
+      I am an ICT student at Durban University of Technology, specializing in Business Analysis, Programming, and Project Management. Passionate about using technology to solve business challenges, I combine analytical thinking with software development and project leadership. My skills include HTML, CSS, JavaScript, Python, and Flask, which I use to create effective and user-friendly web solutions.
+    </p>
+
+    <div class="tech-icons">
+      <img src="{{ url_for('static', filename='html5.png') }}" alt="HTML5" title="HTML5">
+      <img src="{{ url_for('static', filename='css3.webp') }}" alt="CSS3" title="CSS3">
+      <img src="{{ url_for('static', filename='js.png') }}" alt="JavaScript" title="JavaScript">
+      <img src="{{ url_for('static', filename='python.webp') }}" alt="Python" title="Python">
+      <img src="{{ url_for('static', filename='flask.jpg') }}" alt="Flask" title="Flask">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="hero">
+    <div class="info-box">
+      <h1>My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <h2>Mobile Clinic Booking System</h2>
+          <p>For rural areas to book mobile clinics to visit their locations.</p>
+        </div>
+        <div class="project">
+          <h2>DUT Voting Web App</h2>
+          <p>Flask-based system allowing DUT students to vote securely online.</p>
+        </div>
+        <div class="project">
+          <h2>Peer Tutoring App</h2>
+          <p>Booking app for students to schedule sessions with available tutors.</p>
+        </div>
+        <div class="project">
+          <h2>Car Game</h2>
+          <p>A GDevelop racing game collecting coins while navigating town.</p>
+
+     </div>
+     <p>Further information about My projects is on my GitHub account.</p>
+      </div>
+    </div>
+
+  </section>
+
+ <!-- Education -->
+<section id="education" class="hero">
+  <div class="info-box">
+    <h1>Education</h1>
+    <p><strong>Degree:</strong> Bachelor of Information and Communication Technology</p>
+    <p><strong>University:</strong> Durban University of Technology</p>
+    <p><strong>Specialization:</strong> Business Analysis and Programming</p>
+    <p><strong>Years:</strong> 2023 – Present</p>
+
+    <p><strong>Highest grade passed:</strong> Matric</p>
+    <p><strong>School:</strong> Mnqandi High School</p>
+    <p><strong>Year of completion:</strong> 2022</p>
+
+    <p><strong>Download CV:</strong> 
+  <a href="{{ url_for('static', filename='ayanda_cv.pdf') }}" target="_blank" download>
+    Click here to view or download
+  </a>
+</p>
+ </div>
+</section>
+
+
+  <!-- References -->
+  <section id="references" class="hero">
+    <div class="info-box">
+      <h1>References</h1>
+      <ul>
+        <li><strong>Ms. Samkelo Mchunu</strong><br>Sister </li>
+        <p>Email: <a href="mailto:samkelowelcome819@gmail.com">samkelowelcome819@gmail.com</a></p>
+      <p>Phone: <a href="tel:+27734604982">+27 73 460 4982</a></p>
+        <li><strong>Andile Ntshangase</strong><br>Project Teammate (Mobile Clinic Booking System) </li>
+        <p>Email: <a href="mailto:vuyiswaandile176@gmail.com">vuyiswaandile176@gmail.com</a></p>
+      <p>Phone: <a href="tel:+27698113787">+27 69 811 3787</a></p>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="hero">
+  <div class="info-box">
+    <h1>Contact</h1>
+    <p>Email: <a href="mailto:ayandazinhled04@gmail.com">ayandazinhled04@gmail.com</a></p>
+    <p>Phone: <a href="tel:+27639594764">+27 63 959 4764</a></p>
+    <p>GitHub: 
+      <a href="https://github.com/zinhle-dlamini04" target="_blank">
+        github.com/zinhle-dlamini04
+      </a>
+    </p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zinhle Dlamini. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
